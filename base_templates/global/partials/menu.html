@@ -1,0 +1,16 @@
+{% load static %}
+<nav class="menu-container green-bg">
+  <div class="menu-content">
+    <div class="logo">
+      <a href="{% url "inicio:inicio" %}"><img src="{% static 'global/img/logo.png' %}" alt="Logo"></a>
+    </div>
+    
+    <ul class="list-menu">
+      <li><a href="{% url "comunidade:comunidade" %}">COMUNIDADE</a></li>
+      <li><a href="{% url "arena:arena" %}">ARENAS</a></li>
+      <li><a href="{% url "professor:professor" %}">PROFESSORES</a></li>
+      <li><a href="{% url "gestao:gestao" %}">GESTÃO</a></li>
+      <li><a href="{% url "perfil:perfil" %}">PERFIL</a></li>
+    </ul>
+  </div> 
+</nav>

@@ -1,0 +1,156 @@
+:root {
+   --light-green-color: #20a95b;
+   --white-color: #f8f8ff;
+   --light-gray-color: #f2eeef;
+   --dark-gray-color: #053102;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  /* color: var(--white-color); */
+  /* color: black; */
+  /* color: white; */
+  color: var(--light-green-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.green-bg {
+  /* background-color: var(--light-green-color); */
+  background-color: black;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-content .logo {
+  margin-left: 5rem;
+}
+
+.menu-content .logo a img {
+  max-width: 120px;
+  max-height: 65px;
+}
+
+.list-menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.list-menu li a {
+  padding: 1rem;
+}
+
+.menu-content ul li a:hover {
+  border-bottom: 0.3rem solid var(--dark-gray-color);
+}
+
+.section {
+  min-width: 100vh;
+}
+
+.teste{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teste div {
+  width: 92%;
+  height: 100%;
+  min-height: 85vh;
+  background-color: var(--light-green-color);
+  color: black;
+  margin-top: 10rem;
+}
+
+.section {
+  padding-top: 8rem;
+  min-height: 100vh;
+  background: linear-gradient(#000000 0%, var(--light-green-color) 97%);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 2rem;
+  width: 100%;
+  max-width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  'text-block-1 img-1',
+  'img-2 text-block-2'
+  ;
+}
+
+.text-block, .container-img {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 3rem;
+}
+
+.text-block {
+  padding-top: 3.5rem;
+}
+
+.text-block {
+  text-align: left;
+}
+
+.container-img {
+  float: left;
+    margin-right: 20px;
+}
+
+/* .img {
+  position: absolute;
+} */
+
+#text-block-1 {
+  grid-area: "text-block-1";
+}
+
+#text-block-1 h2 {
+  color: var(--light-green-color);
+}
+
+#img-1 {
+  grid-area: "img-1";
+}
+
+#text-block-2 {
+  grid-area: "text-block-2";
+}
+
+#img-2 {
+  grid-area: "img-2";
+}
