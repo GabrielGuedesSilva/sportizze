@@ -1,0 +1,29 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="section">
+    <div class="content">
+
+      <div class="text-block" id="text-block-1">
+        <h2>Sportizze</h2>
+        <p>A sua comunidade de Esportes. 
+        Somos responsáveis por conectar pessoas a partir da prática de esportes em parceria com as arenas mais famosas do Brasil.
+        </p>
+      </div>
+
+      <div class="container-img">
+        <img class="img" id="img-1" src="{% static "inicio/img/Soccer-rafiki.svg" %}" alt="">
+      </div>
+
+      <div class="container-img">
+        <img class="img" id="img-2" src="{% static "inicio/img/Soccer-cuate.svg" %}" alt="">
+      </div>
+
+      <div class="text-block">
+        <p>Com a nossa plataforma você vai vivenciar e se conectar com a prática de esportes</p>
+      </div>      
+      
+    </div>
+  </div>
+{% endblock content %}
